@@ -5,6 +5,8 @@
   "main": "index.js",
   "scripts": {
     "build": "echo \"No Op\"",
+    "serve": "npx netlify-lambda serve src/functions",
+    "lambda:build": "npx netlify-lambda build src/functions",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

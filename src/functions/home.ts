@@ -4,12 +4,13 @@ export const handler: Handler = (
   context: Context,
   callback: Callback
 ) => {
+  console.log("event", event);
   console.log("context", context);
   console.log("queryStringParameters", event.queryStringParameters);
 
   callback(null, {
     statusCode: 200,
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ "The Message": "Hello, World" }, null, 2),
+    headers: { "Content-Type": "text/html" },
+    body: "<h1>Home Page</h1>",
   });
 };
